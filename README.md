@@ -25,7 +25,8 @@ Each traffic light has 4 states you can change them at
 ```
 ## Authors
   Seyed Matin Mazloom Nezhad
-  
+  Ayoob Mohammed Hassan	
+  Omar Abdelmoamen Amin 
 ## License
 free to use anywhere this was built for a university project
 
