@@ -15,48 +15,56 @@ STATE1: MOV R3,#100d
 	acall t1s3
 	acall t2s3
 	acall t3s3
+	ACALL DEL
 
 STATE2: MOV R3,#100d
 	ACALL T0S2
 	acall t1s4
 	acall t2s3
 	acall t3s3
+	ACALL DEL
 
 STATE3: MOV R3,#100d ; traffic light 2 is green rest are red
 	ACALL T0S3
 	acall t1s1
 	acall t2s3
 	acall t3s3
+	ACALL DEL
 
 STATE4: MOV R3,#100d
 	ACALL T0S3
 	acall t1s2
 	acall t2s4
 	acall t3s3
+	ACALL DEL
 	
 STATE5: MOV R3,#100d ; traffic light 3 is green
 	ACALL T0S3
 	acall t1s3
 	acall t2s1
 	acall t3s3
+	ACALL DEL
 	
 STATE6: MOV R3,#100d ; 
 	ACALL T0S3
 	acall t1s3
 	acall t2s2
 	acall t3s4
+	ACALL DEL
 	
 STATE7: MOV R3,#100d ; traffic light 4 is green
 	ACALL T0S3
 	acall t1s3
 	acall t2s3
 	acall t2s1
+	ACALL DEL
 
 STATE8: MOV R3,#100d ; 
 	ACALL T0S4
 	acall t1s3
 	acall t2s3
 	acall t2s2
+	ACALL DEL
 	AJMP STATE1
 DEL:	; this is a delay
 AA:	MOV TL1,#00H
