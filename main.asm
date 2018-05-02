@@ -1,4 +1,4 @@
-; Matin MN
+; author : Seyed Matin Mazloom Nezhad
 ORG 00H
 AJMP MAIN
 MAIN: 	MOV TMOD,#10H   ;TIMER 0 IN 16-BIT MODE
@@ -10,62 +10,63 @@ MAIN: 	MOV TMOD,#10H   ;TIMER 0 IN 16-BIT MODE
 ; pin 2 for traffic 3
 ; pin 3 for traffic 4
 
-STATE1: MOV R3,#100d
+STATE1: MOV R3,#20d
 	ACALL T0S1
 	acall t1s3
 	acall t2s3
 	acall t3s3
-	ACALL DEL
+	acall del
 
-STATE2: MOV R3,#100d
+STATE2: MOV R3,#20d
 	ACALL T0S2
 	acall t1s4
 	acall t2s3
 	acall t3s3
-	ACALL DEL
+	acall del
 
-STATE3: MOV R3,#100d ; traffic light 2 is green rest are red
+STATE3: MOV R3,#20d ; traffic light 2 is green rest are red
 	ACALL T0S3
 	acall t1s1
 	acall t2s3
 	acall t3s3
-	ACALL DEL
+	acall del
 
-STATE4: MOV R3,#100d
+STATE4: MOV R3,#20d
 	ACALL T0S3
 	acall t1s2
 	acall t2s4
 	acall t3s3
-	ACALL DEL
+	acall del
 	
-STATE5: MOV R3,#100d ; traffic light 3 is green
+STATE5: MOV R3,#20d ; traffic light 3 is green
 	ACALL T0S3
 	acall t1s3
 	acall t2s1
 	acall t3s3
-	ACALL DEL
+	acall del
 	
-STATE6: MOV R3,#100d ; 
+STATE6: MOV R3,#20d ; 
 	ACALL T0S3
 	acall t1s3
 	acall t2s2
 	acall t3s4
-	ACALL DEL
+	acall del
 	
-STATE7: MOV R3,#100d ; traffic light 4 is green
+STATE7: MOV R3,#20d ; traffic light 4 is green
 	ACALL T0S3
 	acall t1s3
 	acall t2s3
 	acall t2s1
-	ACALL DEL
+	acall del
 
-STATE8: MOV R3,#100d ; 
+STATE8: MOV R3,#20d ; 
 	ACALL T0S4
 	acall t1s3
 	acall t2s3
 	acall t2s2
-	ACALL DEL
+	acall del
 	AJMP STATE1
+	
 DEL:	; this is a delay
 AA:	MOV TL1,#00H
 	MOV TH1,#00H
