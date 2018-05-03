@@ -15,6 +15,14 @@ In order to run the code on your microcontroller you need Progisp
 
 The system is controlled with states each state defines the state of each indivisual traffic light (each traffic light has 4 state green,yellow,red,green-yellow)
 ```
+; 65ms
+; pin 0 for traffic 1
+; pin 1 for traffic 2
+; pin 2 for traffic 3
+; pin 3 for traffic 4
+```
+here is how the states are configured
+```
  STATE1: MOV R3,#20d ; this line sets the time this state will take
 	ACALL T0S1 ; T0S1 is a function that sets the state for traffic light 0 to state 1 (green)
 	acall t1s3
