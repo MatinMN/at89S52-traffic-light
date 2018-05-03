@@ -9,9 +9,8 @@ There are 4 traffic light and only one traffic light is green at any time althou
 
 In order to run the code on your microcontroller you need Progisp 
 
-```
-download from here : [progisp](https://search.edaboard.com/progisp.html)
-```
+[progisp](https://search.edaboard.com/progisp.html)
+
 ## Deployment
 
 Each traffic light has 4 states you can change them at
