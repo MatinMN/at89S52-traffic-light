@@ -39,8 +39,8 @@ STATE2: MOV R3,#20d
 ```
 ## Authors
 ```
-  Seyed Matin Mazloom Nezhad
   Ayoob Mohammed Hassan	
+  Seyed Matin Mazloom Nezhad
   Omar Abdelmoamen Amin 
 ```
 ## License
