@@ -1,4 +1,3 @@
-; author : Seyed Matin Mazloom Nezhad
 ORG 00H
 AJMP MAIN
 MAIN: 	MOV TMOD,#10H   ;TIMER 0 IN 16-BIT MODE
