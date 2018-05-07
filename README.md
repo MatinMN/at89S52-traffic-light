@@ -1,6 +1,7 @@
 # AT89S52 Traffic Light
 
 A basic traffic light system for the AT89S52 micro controller programed in assembaly
+[video]("https://www.youtube.com/watch?v=-81RPznsBI8")
 
 ## How it works
 There are 4 traffic light and only one traffic light is green at any time although this can be changed very easily to allow to traffic lights to be greaan at one time the code it programmed so that you can make any state you want
