@@ -38,12 +38,6 @@ STATE2: MOV R3,#20d
 	acall t3s3
 	acall del
 ```
-## Authors
-```
-  Ayoob Mohammed Hassan	
-  Seyed Matin Mazloom Nezhad
-  Omar Abdelmoamen Amin 
-```
 ## License
 free to use anywhere this was built for a university project
 
