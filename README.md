@@ -38,10 +38,10 @@ STATE2: MOV R3,#20d
 	acall del
 ```
 ## Other Authors
--```
+```
 -  Ayoob Mohammed Hassan	
 -  Omar Abdelmoamen Amin 
--```
+```
 ## License
 free to use anywhere this was built for a university project
 
